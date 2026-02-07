@@ -6,7 +6,7 @@ Perhaps using this script can be used more easily than building mkpasswd command
 
 `mkpasswd [-s|--simbol] [length] [number of password candidates]`
 
-  - When using option `-s` or `--simbol`, password candidates includes some simbole characters. If you wish to edit excluding simboles, set environment variable `MKPWD_EXCHR`. `MKPWD_EXCHR` default value is `!&*()[]{}<>?|/\;`
+  - When using option `-s` or `--simbol`, password candidates includes some simbol characters. If you wish to edit excluding simbols, set environment variable `MKPWD_EXCHR`. `MKPWD_EXCHR` default value is `!&*()[]{}<>?|/\;`
 
   - When not giving `number of password candidates`, default is `1`.
   - When not giving `length`, default is `42`.
