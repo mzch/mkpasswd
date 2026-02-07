@@ -14,25 +14,21 @@ Perhaps using this script can be used more easily than building mkpasswd command
   - When not installed `pwgen`, `mkpasswd` uses `/dev/uramdom` instead and prints an alert message, `Please install "pwgen" to make it more convenient.`
 
 #### Example
-1. `$ mkpasswd`
-   `ofiecooCh7reikofaixiK9xaej9cogai9ahchiepha`
-   `$`
+1. `$ mkpasswd`<br />
+   `ofiecooCh7reikofaixiK9xaej9cogai9ahchiepha`<br />
 
-1. `$ mkpasswd 24`
-   `UochohriPohzie4yoh9Ep3wa`
-   `$`
+1. `$ mkpasswd 24`<br />
+   `UochohriPohzie4yoh9Ep3wa`<br />
 
 
-1. `$ mkpasswd 24 4`
-   `jaiXiy7hiuHoh4uqui9yie7g`
-   `Evij3iesh9ahnah9zooHai9e`
-   `aihoVaepieniting7eoboe9r`
-   `Aixo7roh7ANahz7okeaphire`
-   `$`
+1. `$ mkpasswd 24 4`<br />
+   `jaiXiy7hiuHoh4uqui9yie7g`<br />
+   `Evij3iesh9ahnah9zooHai9e`<br />
+   `aihoVaepieniting7eoboe9r`<br />
+   `Aixo7roh7ANahz7okeaphire`<br />
 
-1. `$ mkpasswd 24 -s`, `mkpasswd -s 24`, `mkpasswd --simbol 23` or `mkpasswd 24 --simbol`
-   `I^:aBtUnyh=g,^#IWtCz7va,`
-   `$`
+1. `$ mkpasswd 24 -s`,<br />`mkpasswd -s 24`,<br />`mkpasswd --simbol 23` or<br />`mkpasswd 24 --simbol`
+   `I^:aBtUnyh=g,^#IWtCz7va,`<br />
 
 
 #### License
