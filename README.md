@@ -27,7 +27,7 @@ Perhaps using this script can be used more easily than building mkpasswd command
    `aihoVaepieniting7eoboe9r`<br />
    `Aixo7roh7ANahz7okeaphire`<br />
 
-1. `$ mkpasswd 24 -s`,<br />`$ mkpasswd -s 24`,<br />`$ mkpasswd --simbol 23` or<br />`$ mkpasswd 24 --simbol`<br />
+1. `$ mkpasswd 24 -s`,<br />`$ mkpasswd -s 24`,<br />`$ mkpasswd --simbol 24` or<br />`$ mkpasswd 24 --simbol`<br />
    `I^:aBtUnyh=g,^#IWtCz7va,`<br />
 
 
