@@ -1,5 +1,5 @@
 # mkpasswd for Debian system
-This tiny script to create password candidates is for Debian System that doesn't have mkpasswd command natively.
+This tiny script to create password candidates is for `Debian` System that doesn't have `mkpasswd` command natively.
 Perhaps using this script can be used more easily than building mkpasswd command from source codes.
 
 #### Usage
