@@ -10,7 +10,7 @@ Perhaps using this script can be used more easily than building mkpasswd command
 
   - When not giving `number of password candidates`, default is `1`.
   - When not giving `length`, default is `42`.
-  - I recomend you to install `pwgen` package using `sudo apt-get install pwgen`. It presents more better passwords.
+  - I recomend you to install `pwgen` package using `sudo apt-get install pwgen`. It presents better passwords.
   - When not installed `pwgen`, `mkpasswd` uses `/dev/uramdom` instead and prints an alert message, `Please insall "pwgen" to make it more convenient.`
 
 #### Example
