@@ -11,7 +11,7 @@ PWGEN="pwgen"
 PWGEN=$(which $PWGEN)
 if [[ $? -ne 0 ]] ; then
   no_PwGen=1
-  echo -e '\e[1m\e[47mPlease insall "\e[42mpwgen\e[47m" to make it more convenient.\e[0m'
+  echo -e '\e[1m\e[47mPlease install "\e[42mpwgen\e[47m" to make it more convenient.\e[0m'
   echo
 fi
 
