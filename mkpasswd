@@ -1,0 +1,75 @@
+#! /usr/bin/env bash
+
+OPTS="-c -n -B"
+
+function print_usage() {
+  echo 'Usage: '$0' [-s|--simbol] length [num-of-password]'
+}
+
+no_PwGen=0
+PWGEN="pwgen"
+PWGEN=$(which $PWGEN)
+if [[ $? -ne 0 ]] ; then
+  no_PwGen=1
+  echo -e '\e[1m\e[47mPlease insall "\e[42mpwgen\e[47m" to make it more convenient.\e[0m'
+  echo
+fi
+
+PATTRN='a-zA-Z0-9'
+
+ARGS=$(getopt -o s --long simbol -n "$0" -- "$@")
+
+eval set -- "$ARGS"
+
+while [[ -n "$1" ]]
+do
+  case "$1" in
+    "-s" | "--simbol")
+      if [[ -n "$MKPWD_EXCHR" ]] ; then
+        exchars="$MKPWD_EXCHR"
+      else
+        exchars='`!&*()[]{}<>?|/\;'
+      fi
+      OPTS=$OPGS" -y -r $exchars"
+      PATTRN='a-zA-Z0-9~!@#\$%^_\+-=:;,\.'
+      shift
+      ;;
+    "--")
+      shift
+      break
+      ;;
+    "*")
+      print_usage
+      exit 1
+      ;;
+  esac
+done
+
+if [[ -z "$1" ]] ; then
+  length=42
+elif [[ "$1" =~ ^[0-9]+$ ]] ; then
+  length=$1
+else
+  print_usage
+  exit 1
+fi
+if [[ -n "$2" ]] ; then
+  if [[ "$2" =~ ^[0-9]+$ ]]; then
+    lines=$2
+  else
+    print_usage
+    exit 1
+  fi
+else
+  lines=1
+fi
+
+if [[ $no_PwGen -ne 0 ]] ; then
+  cat /dev/urandom | tr -dc "$PATTRN" | fold -w $length | head -n $lines | echo
+else
+  pw=$($PWGEN $OPTS $length $lines)
+  for p in $pw
+  do
+    echo $p
+  done
+fi
