@@ -11,8 +11,10 @@ PWGEN="pwgen"
 PWGEN=$(which $PWGEN)
 if [[ $? -ne 0 ]] ; then
   no_PwGen=1
-  echo -e '\e[1m\e[47mPlease install "\e[42mpwgen\e[47m" to make it more convenient.\e[0m'
-  echo
+  if [[ -t 1 ]] ; then
+    echo -e '\e[1m\e[47mPlease install "\e[42mpwgen\e[47m" to make it more convenient.\e[0m'
+    echo
+  fi
 fi
 
 PATTRN='a-zA-Z0-9'
@@ -65,7 +67,7 @@ else
 fi
 
 if [[ $no_PwGen -ne 0 ]] ; then
-  cat /dev/urandom | tr -dc "$PATTRN" | fold -w $length | head -n $lines | echo
+  cat /dev/urandom | tr -dc "$PATTRN" | fold -w $length | head -n $lines
 else
   pw=$($PWGEN $OPTS $length $lines)
   for p in $pw
