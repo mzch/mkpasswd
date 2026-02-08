@@ -13,7 +13,7 @@ Perhaps using this script can be used more easily than building mkpasswd command
   - I recomend you to install `pwgen` package using `sudo apt-get install pwgen`. It presents better passwords.
   - When not installed `pwgen`, `mkpasswd` uses `/dev/uramdom` instead and prints an alert message, `Please install "pwgen" to make it more convenient.`
 
-#### Example
+#### Examples
 1. `$ mkpasswd`<br />
    `ofiecooCh7reikofaixiK9xaej9cogai9ahchiepha`<br />
 
@@ -28,7 +28,7 @@ Perhaps using this script can be used more easily than building mkpasswd command
    `Aixo7roh7ANahz7okeaphire`<br />
 
 1. `$ mkpasswd 24 -s`,<br />`$ mkpasswd -s 24`,<br />`$ mkpasswd --simbol 24` or<br />`$ mkpasswd 24 --simbol`<br />
-   `I^:aBtUnyh=g,^#IWtCz7va,`<br />
+   `vq^TkzY@1,GpFhZw6$iMG:uJ`<br />
 
 
 #### License
